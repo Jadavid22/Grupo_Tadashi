@@ -1,2 +1,2 @@
-# Grupo_Tadashi
-Grupo de trabajo arquitectura A2 (9)
+# The Tadashi Group
+Sitio Web = https://sites.google.com/view/thetadashigroup/inicio
