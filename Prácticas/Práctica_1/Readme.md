@@ -44,7 +44,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulpu
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
 
 ### Mux4Way16
-Esta compuerta necesita un total de 4 entradas de 16 bits, por lo que podríamos usar el chip Mux16. De igual forma, la lógica será muy similar a la compuerta 4-Way Demux.
+Esta compuerta necesita un total de 4 entradas de 16 bits, por lo que podríamos usar el chip Mux16. De igual forma, la lógica será muy similar a la compuerta DMux4Way.
 
 #### Resolución:
 - Vamos a usar tres compuertas Max16, para comodidad les daremos los alias [1], [2] y [3] para una mejor comprensión.
