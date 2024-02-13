@@ -1,11 +1,20 @@
-## Práctica 1: Introducción a nand2tetris e Implementación de Compuertas Lógicas
-### Resumen: 
+## Práctica 1: Aprendiendo a Usar nand2tetris e Implementación de Compuertas Lógicas
+
+### Introducción:
 En esta práctica exploraremos la implementación de compuertas lógicas básicas utilizando el software nand2tetris, con el apoyo del entorno de desarrollo Visual Studio Code. El propósito es comprender y diseñar compuertas lógicas fundamentales, como NOT, AND, OR, XOR, entre otras, utilizando únicamente la puerta lógica NAND como base.
+
+Para comenzar, descargamos el software nand2tetris, que nos proporciona una plataforma interactiva para construir desde cero un computador completo, incluyendo hardware y software, desde los niveles más básicos hasta los más complejos. Así pues, usaremos [este vídeo](https://www.youtube.com/watch?v=xUFpmKa7f7Y&list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI&index=5) como referencia para la instalación.
+
+Con la ayuda de [Visual Studio Code](https://code.visualstudio.com/), un entorno de desarrollo integrado (IDE) altamente versátil, editaremos y escribiremos el código necesario para implementar las compuertas lógicas. Visual Studio ofrece herramientas poderosas para la escritura de código, depuración y gestión de proyectos, lo que facilita enormemente el proceso de desarrollo.
+
+Una vez que tenemos el entorno preparado, comenzamos a diseñar nuestras compuertas lógicas. La elección de la puerta NAND como base se debe a su capacidad para implementar cualquier otra compuerta lógica. Dicho esto, hacemos uso del lenguaje de descripción de hardware (HDL) proporcionado por nand2tetris para escribir el código que define el comportamiento de nuestras compuertas.
+Después de tener el código en Visual Studio, lo probamos en el entorno de simulación de nand2tetris. Esta fase es crucial para verificar que nuestras compuertas funcionen correctamente según las especificaciones lógicas esperadas. Si hay errores, volvemos al código en Visual Studio para corregirlos y repetimos el proceso de prueba.
 
 ### Objetivo:
 Construir todas las puertas lógicas descritas en la Figura 1, produciendo un conjunto de chips básicos. Los únicos bloques de construcción que podemos utilizar en este proyecto son las puertas Nand primitivas y las puertas compuestas que iremos construyendo gradualmente sobre ellas.
 
 ## Compuertas Requeridas
+Figura 1. Listado de Compuertas Lógicas que van a Desarrollarse.
 ![Compuertas Lógicas a Realizar](https://i.ibb.co/g9c1s3n/Captura-de-pantalla-2024-02-11-091133.png)
 
 ### NOT:
