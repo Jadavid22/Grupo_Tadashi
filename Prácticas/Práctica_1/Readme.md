@@ -13,9 +13,14 @@ Después de tener el código en Visual Studio, lo probamos en el entorno de simu
 ### Objetivo:
 Construir todas las puertas lógicas descritas en la Figura 1, produciendo un conjunto de chips básicos. Los únicos bloques de construcción que podemos utilizar en este proyecto son las puertas Nand primitivas y las puertas compuestas que iremos construyendo gradualmente sobre ellas.
 
-## Compuertas Requeridas
-Figura 1. Listado de Compuertas Lógicas que van a Desarrollarse.
+**Figura 1.** Listado de Compuertas Lógicas que van a Desarrollarse.
+
+
 ![Compuertas Lógicas a Realizar](https://i.ibb.co/g9c1s3n/Captura-de-pantalla-2024-02-11-091133.png)
+
+**Nota.** Imagen obtenida de: https://www.nand2tetris.org/project01
+
+## Solución Compuertas Lógicas
 
 ### NOT:
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
