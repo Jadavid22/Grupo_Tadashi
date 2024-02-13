@@ -31,6 +31,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulpu
 ### And16
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
 
+### Or16
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+
 ### Mux16
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
 
@@ -54,9 +57,10 @@ Esta compuerta necesita un total de 4 entradas de 16 bits, por lo que podríamos
 - Ahora, el selector en [1] y [2] será el bit menos significativo (bit 0).
 - Asignamos algún nombre a los dos outputs de las entradas y le pasamos esos valores como inputs a [3].
 
-#### Resultados:
-![Código Mux4Way16](https://i.ibb.co/VvMbDXL/Captura-de-pantalla-2024-02-11-192338.png)
-
+#### Código:
+![Código Mux4Way16](https://i.ibb.co/ZNhtWNC/Mux4-Way16-1.png)
+#### Resultado:
+![Resultado Mux4Way16](https://i.ibb.co/SV157Rb/Mux4-Way16-2.png)
 
 ### Mux8Way16
 En este punto ya hemos implementado un Demultiplexor de 8 vías, por lo que podríamos seguir el mismo procedimiento solo que este iría "invertido".
@@ -68,8 +72,10 @@ En este punto ya hemos implementado un Demultiplexor de 8 vías, por lo que podr
 - Nombramos las dos salidas de las compuertas Mux4Way16 y pasamos esos valores como inputs del Mux16.
 - Las entradas de las dos compuertas Mux4Way16 van a ser desde afuera hacia dentro, por lo que el orden sería: a=a, b=b, c=c, d=d, a=e, b=f, c=g, d=h respectivamente.
 
-#### Resultados:
-![Código Mux8Way16](https://i.ibb.co/FKWsM18/Captura-de-pantalla-2024-02-11-213024.png)
+#### Código:
+![Código Mux8Way16](https://i.ibb.co/nBTHJ5s/Mux8-Way16-1.png)
+#### Resultado:
+![Resultado Mux8Way16](https://i.ibb.co/4MH32cS/Mux8-Way16-2.png)
 
 ## Referencias
 [1] https://www.youtube.com/watch?v=Mzy0RG9Z1Ak (From NAND To Tetris - Logic Gates Lab).
