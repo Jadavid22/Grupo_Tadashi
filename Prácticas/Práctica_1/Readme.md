@@ -164,7 +164,7 @@ Es un circuito lógico que toma una entrada y la dirige a uno de los cuatro posi
 ### DMux8Way
 Parecido al anterior solo que este cuenta con 8 salidas a, b, c, d, e, f, g, h y tres selectores sel[0] , sel[1], sel[2] lo que determina cuál de las ocho salidas se activará. Como ya tenemos el DMux4Way, vamos a usar dos y un DMux.
 
-**Figura 20.** Código Chip DMux8Way
+**Figura 21.** Código Chip DMux8Way
 
 
 ![Código DMux8Way](https://i.ibb.co/v1hFS4Z/Captura-de-pantalla-2024-02-15-142706.png)
@@ -178,7 +178,7 @@ Esta compuerta necesita un total de 4 entradas de 16 bits, por lo que podríamos
 - Ahora, el selector en [1] y [2] será el bit menos significativo (bit 0).
 - Asignamos algún nombre a los dos outputs de las entradas y le pasamos esos valores como inputs a [3].
 
-**Figura 21.** Código Chip Mux4Way16
+**Figura 22.** Código Chip Mux4Way16
 ![Código Mux4Way16](https://i.ibb.co/ZNhtWNC/Mux4-Way16-1.png)
 
 ### Mux8Way16
@@ -189,7 +189,7 @@ En este punto ya hemos implementado un Demultiplexor de 8 vías, por lo que podr
 - Nombramos las dos salidas de las compuertas Mux4Way16 y pasamos esos valores como inputs del Mux16.
 - Las entradas de las dos compuertas Mux4Way16 van a ser desde afuera hacia dentro, por lo que el orden sería: a=a, b=b, c=c, d=d, a=e, b=f, c=g, d=h respectivamente.
 
-**Figura 22.** Código Chip Mux8Way16
+**Figura 23.** Código Chip Mux8Way16
 ![Código Mux8Way16](https://i.ibb.co/nBTHJ5s/Mux8-Way16-1.png)
 
 ## Referencias
