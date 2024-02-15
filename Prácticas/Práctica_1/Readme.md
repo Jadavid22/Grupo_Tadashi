@@ -64,7 +64,7 @@ La construcción de una compuerta AND se basa en la utilización de una compuert
 ![Código AND](https://i.ibb.co/vVVR3CF/Captura-de-pantalla-2024-02-14-205507.png)
 
 ### XOR:
-Para implementar una compuerta XOR (o exclusiva) utilizaremos compuertas NOT, AND y OR. Podemos seguir el enfoque del diseño lógico digital, ya que la compuerta XOR devuelve un resultado verdadero (1) cuando hay un número impar de entradas verdaderas.
+Para implementar una compuerta XOR (o exclusiva) utilizaremos compuertas NOT, AND y OR. Primero necesitamos negar las entradas a y b con compuertas NOT, luego pasamos a una AND el resultado de cada NOT con la variable opuesta sin negar. Por ejemplo, a sin negar y b negada. Finalmente, los resultados de esas compuertas AND los pasamos una compuerta OR y ya obtendríamos los resultados que estamos buscando.
 
 **Figura 8.** Representación Compuerta XOR
 
@@ -78,7 +78,13 @@ Para implementar una compuerta XOR (o exclusiva) utilizaremos compuertas NOT, AN
 
 
 ### Mux:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+Ahora tenemos una nueva variable de entrada: el selector. Como este afecta directamente a la salida dependiendo del estado que tenga, lo vamos a negar primero con una NOT. Ahora bien, necesitamos que si el selector está en 0, la salida sea a, por lo que usaremos una AND que de parámetros reciba al selector negado y a a. Asimismo, si el selector está en 1, la salida será b, entonces en otra AND de parámetros le pasamos al selector sin negar y a b. Finalmente, los resultados de ambas AND las pasamos como parámetros de una OR y ya obtenemos al multiplexor.
+
+**Figura 9.** Código Compuerta XOR
+
+
+![Código Mux](https://i.ibb.co/T0cyLD8/Captura-de-pantalla-2024-02-14-233529.png)
+
 
 ### DMux:
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
