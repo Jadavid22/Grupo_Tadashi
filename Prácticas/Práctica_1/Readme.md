@@ -78,9 +78,9 @@ Para implementar una compuerta XOR (o exclusiva) utilizaremos compuertas NOT, AN
 
 
 ### Mux:
-Ahora tenemos una nueva variable de entrada: el selector. Como este afecta directamente a la salida dependiendo del estado que tenga, lo vamos a negar primero con una NOT. Ahora bien, necesitamos que si el selector está en 0, la salida sea a, por lo que usaremos una AND que de parámetros reciba al selector negado y a a. Asimismo, si el selector está en 1, la salida será b, entonces en otra AND de parámetros le pasamos al selector sin negar y a b. Finalmente, los resultados de ambas AND las pasamos como parámetros de una OR y ya obtenemos al multiplexor.
+En este chip tenemos una nueva variable de entrada: el selector. Como este afecta directamente a la salida dependiendo del estado que tenga, lo vamos a negar primero con una NOT. Ahora bien, necesitamos que si el selector está en 0, la salida sea a, por lo que usaremos una AND que de parámetros reciba al selector negado y a a. Asimismo, si el selector está en 1, la salida será b, entonces en otra AND de parámetros le pasamos al selector sin negar y a b. Finalmente, los resultados de ambas AND las mandamos como parámetros de una OR y ya obtenemos al multiplexor.
 
-**Figura 9.** Código Compuerta XOR
+**Figura 10.** Código Compuerta XOR
 
 
 ![Código Mux](https://i.ibb.co/T0cyLD8/Captura-de-pantalla-2024-02-14-233529.png)
