@@ -145,7 +145,7 @@ Aquí podemos aplicar un proceso de reducción, ya que todas las ocho entradas t
 **Figura 18.** Código Chip Or8Way
 
 
-![Código Or8Way](https://i.ibb.co/vBwq1LK/Captura-de-pantalla-2024-02-15-140624.png)
+![Código Or8Way](https://i.ibb.co/YTvSMVC/Captura-de-pantalla-2024-02-15-143919.png)
 
 ### DMux4Way
 Es un circuito lógico que toma una entrada y la dirige a uno de los cuatro posibles canales de salida, según señales de control. Tiene una entrada in, cuatro salidas a, b, c y d y dos selectores sel[0] y sel[1]. Para este circuito haremos uso de los DMux que ya tenemos.
