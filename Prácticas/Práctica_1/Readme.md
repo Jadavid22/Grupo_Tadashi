@@ -124,12 +124,12 @@ Súper sencilla: cambiar del código de And16 todos los AND por OR. Esto debido 
 ### Mux16
 Debemos repetir 16 veces la compuerta Mux. Se tendrán dos entradas a y b y dos vectores con 16 valores a y b y el selector "sel". A continuación, se repetirá 16 veces la compuerta Mux para cada una de las entradas de los vectores.
 
-**Figura 15.** Representación Compuerta XOR
+**Figura 15.** Representación Compuerta Mux16
 
 
 ![Explicación Mux16](https://i.ibb.co/BGXhqWs/Captura-de-pantalla-2024-02-15-140507.png)
 
-**Figura 16.** Código Compuerta XOR
+**Figura 16.** Código Compuerta Mux16
 
 
 ![Código Mux16](https://i.ibb.co/vBwq1LK/Captura-de-pantalla-2024-02-15-140624.png)
@@ -137,21 +137,37 @@ Debemos repetir 16 veces la compuerta Mux. Se tendrán dos entradas a y b y dos 
 ### Or8Way
 Aquí podemos aplicar un proceso de reducción, ya que todas las ocho entradas terminan en una salida. Ahora bien, un dato importante es que si una sola entrada es 1, el out será uno, la única manera de que out sea 0 es si todas las entradas son 0, por lo que podemos usar múltiples compuertas OR hasta reducir toda la expresión en una salida.
 
-**Figura 17.** Representación Compuerta XOR
+**Figura 17.** Representación Chip Or8Way
 
 
-![Explicación Mux16](https://i.ibb.co/BGXhqWs/Captura-de-pantalla-2024-02-15-140507.png)
+![Explicación Or8Way](https://i.ibb.co/BGXhqWs/Captura-de-pantalla-2024-02-15-140507.png)
 
-**Figura 18.** Código Compuerta XOR
+**Figura 18.** Código Chip Or8Way
 
 
-![Código Mux16](https://i.ibb.co/vBwq1LK/Captura-de-pantalla-2024-02-15-140624.png)
+![Código Or8Way](https://i.ibb.co/vBwq1LK/Captura-de-pantalla-2024-02-15-140624.png)
 
 ### DMux4Way
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+Es un circuito lógico que toma una entrada y la dirige a uno de los cuatro posibles canales de salida, según señales de control. Tiene una entrada in, cuatro salidas a, b, c y d y dos selectores sel[0] y sel[1]. Para este circuito haremos uso de los DMux que ya tenemos.
+
+**Figura 19.** Representación Chip DMux4Way
+
+
+![Explicación DMux4Way](https://i.ibb.co/g4N38KF/Captura-de-pantalla-2024-02-15-142332.png)
+
+**Figura 20.** Código Chip DMux4Way
+
+
+![Código DMux4Way](https://i.ibb.co/DgL1nTp/Captura-de-pantalla-2024-02-15-142409.png)
+
 
 ### DMux8Way
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+Parecido al anterior solo que este cuenta con 8 salidas a, b, c, d, e, f, g, h y tres selectores sel[0] , sel[1], sel[2] lo que determina cuál de las ocho salidas se activará. Como ya tenemos el DMux4Way, vamos a usar dos y un DMux.
+
+**Figura 20.** Código Chip DMux8Way
+
+
+![Código DMux8Way](https://i.ibb.co/v1hFS4Z/Captura-de-pantalla-2024-02-15-142706.png)
 
 ### Mux4Way16
 Esta compuerta necesita un total de 4 entradas de 16 bits, por lo que podríamos usar el chip Mux16. De igual forma, la lógica será muy similar a la compuerta DMux4Way.
