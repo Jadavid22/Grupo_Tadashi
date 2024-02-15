@@ -20,23 +20,61 @@ Construir todas las puertas lógicas descritas en la Figura 1, produciendo un co
 
 **Nota.** Imagen obtenida de: https://www.nand2tetris.org/project01
 
-## Solución Compuertas Lógicas
+## Solución de Compuertas Lógicas
 
 ### NOT:
 La compuerta lógica NOT se implementa utilizando exclusivamente la compuerta NAND como base. La compuerta NOT, también conocida como inversor, tiene una única entrada y una única salida, y su función es invertir el valor de la entrada.
 La implementación de la compuerta NOT utilizando NAND se logra conectando ambas entradas de la NAND a la misma señal de entrada. El resultado es que cuando la entrada es 0, la salida de la NAND será 1, y viceversa. Esto crea una inversión del valor de entrada, que es exactamente la función de una compuerta NOT.
 
+**Figura 2.** Representación Compuerta NOT
+
+
 ![Explicación NOT](https://i.ibb.co/LnkbDDx/Captura-de-pantalla-2024-02-14-204755.png)
+
+**Figura 3.** Código Compuerta NOT
+
+
 ![Código NOT](https://i.ibb.co/YT9FCP9/Captura-de-pantalla-2024-02-14-204602.png)
 
 ### OR:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+La primera compuerta NAND niega la entrada A y la segunda compuerta NAND niega la entrada B. Luego, pasamos estas negaciones como entradas a una tercera compuerta NAND, que simula la operación OR. La salida de esta última compuerta NAND será la salida de la compuerta OR.
+
+**Figura 4.** Representación Compuerta OR
+
+
+![Explicación OR](https://i.ibb.co/5nm8bqx/Captura-de-pantalla-2024-02-14-205059.png)
+
+**Figura 5.** Código Compuerta OR
+
+
+![Código OR](https://i.ibb.co/WfnZfZp/Captura-de-pantalla-2024-02-14-204933.png)
 
 ### AND:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+La construcción de una compuerta AND se basa en la utilización de una compuerta NAND y una compuerta NOT. Básicamente, como AND es el inverso de NAND, solo debemos negar el resultado de NAND.
+
+**Figura 6.** Representación Compuerta AND
+
+
+![Explicación AND](https://i.ibb.co/chnm7cH/Captura-de-pantalla-2024-02-14-205600.png)
+
+**Figura 7.** Código Compuerta AND
+
+
+![Código AND](https://i.ibb.co/vVVR3CF/Captura-de-pantalla-2024-02-14-205507.png)
 
 ### XOR:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+Para implementar una compuerta XOR (o exclusiva) utilizaremos compuertas NOT, AND y OR. Podemos seguir el enfoque del diseño lógico digital. La compuerta XOR devuelve un resultado verdadero (1) cuando hay un número impar de entradas verdaderas.
+
+**Figura 8.** Representación Compuerta XOR
+
+
+![Explicación XOR](https://i.ibb.co/G2BGrjH/Captura-de-pantalla-2024-02-14-210507.png)
+
+**Figura 9.** Código Compuerta XOR
+
+
+![Código XOR](https://i.ibb.co/fdGDhmN/Captura-de-pantalla-2024-02-14-210426.png)
+
 
 ### Mux:
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
@@ -78,8 +116,6 @@ Esta compuerta necesita un total de 4 entradas de 16 bits, por lo que podríamos
 
 #### Código:
 ![Código Mux4Way16](https://i.ibb.co/ZNhtWNC/Mux4-Way16-1.png)
-#### Resultado:
-![Resultado Mux4Way16](https://i.ibb.co/SV157Rb/Mux4-Way16-2.png)
 
 ### Mux8Way16
 En este punto ya hemos implementado un Demultiplexor de 8 vías, por lo que podríamos seguir el mismo procedimiento solo que este iría "invertido".
@@ -93,8 +129,6 @@ En este punto ya hemos implementado un Demultiplexor de 8 vías, por lo que podr
 
 #### Código:
 ![Código Mux8Way16](https://i.ibb.co/nBTHJ5s/Mux8-Way16-1.png)
-#### Resultado:
-![Resultado Mux8Way16](https://i.ibb.co/4MH32cS/Mux8-Way16-2.png)
 
 ## Referencias
 [1] https://www.youtube.com/watch?v=Mzy0RG9Z1Ak (From NAND To Tetris - Logic Gates Lab).
