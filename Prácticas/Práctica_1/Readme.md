@@ -196,6 +196,23 @@ En este punto ya hemos implementado un Demultiplexor de 8 vías, por lo que podr
 
 ![Código Mux8Way16](https://i.ibb.co/nBTHJ5s/Mux8-Way16-1.png)
 
+## Preguntas Adicionales
+
+### ¿Que consideraciones importantes debe tener en cuenta para trabajar con Nand2Tetris?
+
+Principalmente, para esta práctica serían las siguientes:
+- Descargar en nuestro ordenador el paquete de software Nand2Tetris de la sección Software del sitio web.
+- Leer el Capítulo 1 y el Apéndice 2 (sin incluir A2.4) de la sección de recursos.
+- Repasar las partes I-II-III del Simulador de Hardware.
+- Entender cómo cargar los códigos hdl y los scripts para corroborar los resultados.
+- Para más comodidad, usar algún editor de código como Visual Studio.
+
+### ¿Qué otras herramientas similares a Nand2Tetris existen? (De mínimo dos ejemplos)
+
+Encontramos estos dos ejemplos
+- Construye un ordenador de 8 bits desde cero: es un proyecto del señor Ben Eather que consiste en crear un ordenador programable de 8 bits desde cero en protoboards utilizando sólo puertas lógicas simples, documentando todo el proceso en una serie de vídeos de YouTube y en el [siguiente sitio web](https://eater.net/8bit)
+- NandGame: es un sitio web en el que podemos aprender a construir un ordenador partiendo de componentes básicos. El juego consta de una serie de niveles. En cada nivel, tendremos que construir un componente que se comporte de acuerdo con una especificación. Este componente puede utilizarse como bloque de construcción en el siguiente nivel. Una ventaja es que el juego no requiere conocimientos previos de arquitectura informática ni de software, ni tampoco habilidades matemáticas más allá de la suma y la resta. (Sí requiere algo de paciencia: algunas de las tareas pueden tardar un poco en resolverse). Para más información, puedes visitar su [sitio web](https://nandgame.com/)
+
 ## Referencias
 [1] https://www.youtube.com/watch?v=Mzy0RG9Z1Ak (From NAND To Tetris - Logic Gates Lab).
 
