@@ -140,7 +140,7 @@ Aquí podemos aplicar un proceso de reducción, ya que todas las ocho entradas t
 **Figura 17.** Representación Chip Or8Way
 
 
-![Explicación Or8Way](https://i.ibb.co/BGXhqWs/Captura-de-pantalla-2024-02-15-140507.png)
+![Explicación Or8Way](https://i.ibb.co/2SdC3dk/Captura-de-pantalla-2024-02-15-144030.png)
 
 **Figura 18.** Código Chip Or8Way
 
