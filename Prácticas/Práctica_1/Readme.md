@@ -203,4 +203,7 @@ En este punto ya hemos implementado un Demultiplexor de 8 vías, por lo que podr
 [2] https://www.nand2tetris.org/project01 (From Nand to Tetris Sitio Web).
 
 
-[3] Trabajos y Prácticas Rueltas de Semestres Anteriores.
+[3] https://d1lvwzdke54ywg.cloudfront.net/computersystem-1/
+
+
+[4] Trabajos y Prácticas Rueltas de Semestres Anteriores.
