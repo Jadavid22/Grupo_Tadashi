@@ -80,17 +80,30 @@ Para implementar una compuerta XOR (o exclusiva) utilizaremos compuertas NOT, AN
 ### Mux:
 En este chip tenemos una nueva variable de entrada: el selector. Como este afecta directamente a la salida dependiendo del estado que tenga, lo vamos a negar primero con una NOT. Ahora bien, necesitamos que si el selector está en 0, la salida sea a, por lo que usaremos una AND que de parámetros reciba al selector negado y a a. Asimismo, si el selector está en 1, la salida será b, entonces en otra AND de parámetros le pasamos al selector sin negar y a b. Finalmente, los resultados de ambas AND las mandamos como parámetros de una OR y ya obtenemos al multiplexor.
 
-**Figura 10.** Código Compuerta XOR
+**Figura 10.** Código Compuerta MUX
 
 
 ![Código Mux](https://i.ibb.co/T0cyLD8/Captura-de-pantalla-2024-02-14-233529.png)
 
 
 ### DMux:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+Primer chip en incluir dos salidas (a y b) y dos entradas (in y sel). Usaremos una NOT para el selector, ya que si el valor de este es 1, la salida será b; si el selector es 0, la salida será a, por lo que vamos a usar dos AND de la siguiente manera:
+
+- La primera recibe a in y al selector sin negar.
+- La segunda recibe al selector negado y a in.
+
+**Figura 11.** Código Compuerta DMux
+
+
+![Código DMux](https://i.ibb.co/phcDsMS/Captura-de-pantalla-2024-02-15-000003.png)
 
 ### Not16
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+Bastante sencilla de entender e implementar: 16 posibles entradas y todas las que pasen, saldrán negadas. Simplemente vamos a usar 16 compuertas NOT (una para cada entrada) y listo.
+
+**Figura 12.** Código Compuerta DMux
+
+
+![Código Not16](https://i.ibb.co/FH4QxBw/Captura-de-pantalla-2024-02-15-000739.png)
 
 ### And16
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
