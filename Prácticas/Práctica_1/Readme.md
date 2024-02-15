@@ -64,7 +64,7 @@ La construcción de una compuerta AND se basa en la utilización de una compuert
 ![Código AND](https://i.ibb.co/vVVR3CF/Captura-de-pantalla-2024-02-14-205507.png)
 
 ### XOR:
-Para implementar una compuerta XOR (o exclusiva) utilizaremos compuertas NOT, AND y OR. Primero necesitamos negar las entradas a y b con compuertas NOT, luego pasamos a una AND el resultado de cada NOT con la variable opuesta sin negar. Por ejemplo, a sin negar y b negada. Finalmente, los resultados de esas compuertas AND los pasamos una compuerta OR y ya obtendríamos los resultados que estamos buscando.
+Para implementar una compuerta XOR (o exclusiva) utilizaremos compuertas NOT, AND y OR. Primero necesitamos negar las entradas a y b con compuertas NOT, luego pasamos a una AND el resultado de cada NOT con la variable opuesta sin negar. Por ejemplo, a sin negar y b negada. Finalmente, los resultados de esas compuertas AND los pasamos a una compuerta OR y ya obtendríamos los resultados que estamos buscando.
 
 **Figura 8.** Representación Compuerta XOR
 
