@@ -122,10 +122,30 @@ Súper sencilla: cambiar del código de And16 todos los AND por OR. Esto debido 
 ![Código Or16](https://i.ibb.co/MZ3N226/Captura-de-pantalla-2024-02-15-004103.png)
 
 ### Mux16
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+Debemos repetir 16 veces la compuerta Mux. Se tendrán dos entradas a y b y dos vectores con 16 valores a y b y el selector "sel". A continuación, se repetirá 16 veces la compuerta Mux para cada una de las entradas de los vectores.
+
+**Figura 15.** Representación Compuerta XOR
+
+
+![Explicación Mux16](https://i.ibb.co/BGXhqWs/Captura-de-pantalla-2024-02-15-140507.png)
+
+**Figura 16.** Código Compuerta XOR
+
+
+![Código Mux16](https://i.ibb.co/vBwq1LK/Captura-de-pantalla-2024-02-15-140624.png)
 
 ### Or8Way
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+Aquí podemos aplicar un proceso de reducción, ya que todas las ocho entradas terminan en una salida. Ahora bien, un dato importante es que si una sola entrada es 1, el out será uno, la única manera de que out sea 0 es si todas las entradas son 0, por lo que podemos usar múltiples compuertas OR hasta reducir toda la expresión en una salida.
+
+**Figura 17.** Representación Compuerta XOR
+
+
+![Explicación Mux16](https://i.ibb.co/BGXhqWs/Captura-de-pantalla-2024-02-15-140507.png)
+
+**Figura 18.** Código Compuerta XOR
+
+
+![Código Mux16](https://i.ibb.co/vBwq1LK/Captura-de-pantalla-2024-02-15-140624.png)
 
 ### DMux4Way
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
