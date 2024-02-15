@@ -179,6 +179,8 @@ Esta compuerta necesita un total de 4 entradas de 16 bits, por lo que podríamos
 - Asignamos algún nombre a los dos outputs de las entradas y le pasamos esos valores como inputs a [3].
 
 **Figura 22.** Código Chip Mux4Way16
+
+
 ![Código Mux4Way16](https://i.ibb.co/ZNhtWNC/Mux4-Way16-1.png)
 
 ### Mux8Way16
@@ -190,6 +192,8 @@ En este punto ya hemos implementado un Demultiplexor de 8 vías, por lo que podr
 - Las entradas de las dos compuertas Mux4Way16 van a ser desde afuera hacia dentro, por lo que el orden sería: a=a, b=b, c=c, d=d, a=e, b=f, c=g, d=h respectivamente.
 
 **Figura 23.** Código Chip Mux8Way16
+
+
 ![Código Mux8Way16](https://i.ibb.co/nBTHJ5s/Mux8-Way16-1.png)
 
 ## Referencias
