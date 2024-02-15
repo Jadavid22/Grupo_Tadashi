@@ -23,7 +23,11 @@ Construir todas las puertas lógicas descritas en la Figura 1, produciendo un co
 ## Solución Compuertas Lógicas
 
 ### NOT:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+La compuerta lógica NOT se implementa utilizando exclusivamente la compuerta NAND como base. La compuerta NOT, también conocida como inversor, tiene una única entrada y una única salida, y su función es invertir el valor de la entrada.
+La implementación de la compuerta NOT utilizando NAND se logra conectando ambas entradas de la NAND a la misma señal de entrada. El resultado es que cuando la entrada es 0, la salida de la NAND será 1, y viceversa. Esto crea una inversión del valor de entrada, que es exactamente la función de una compuerta NOT.
+
+![Explicación NOT](https://i.ibb.co/LnkbDDx/Captura-de-pantalla-2024-02-14-204755.png)
+![Código NOT](https://i.ibb.co/YT9FCP9/Captura-de-pantalla-2024-02-14-204602.png)
 
 ### OR:
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
