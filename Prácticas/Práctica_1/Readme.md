@@ -37,7 +37,7 @@ La implementación de la compuerta NOT utilizando NAND se logra conectando ambas
 ![Código NOT](https://i.ibb.co/YT9FCP9/Captura-de-pantalla-2024-02-14-204602.png)
 
 ### OR:
-La primera compuerta NAND niega la entrada A y la segunda compuerta NAND niega la entrada B. Luego, pasamos estas negaciones como entradas a una tercera compuerta NAND, que simula la operación OR. La salida de esta última compuerta NAND será la salida de la compuerta OR.
+La primera compuerta NOT niega la entrada A y la segunda compuerta NOT niega la entrada B. Luego, pasamos estas negaciones como entradas a una tercera compuerta NAND, que simula la operación OR. La salida de esta última compuerta NAND será la salida de la compuerta OR.
 
 **Figura 4.** Representación Compuerta OR
 
