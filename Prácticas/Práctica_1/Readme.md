@@ -1,20 +1,20 @@
-## Práctica 1: Aprendiendo a Usar nand2tetris e Implementación de Compuertas Lógicas
+## Práctica 1: Aprendiendo a Usar nand2tetris e Implementación de Chips Lógicos
 
 ### Introducción:
-En esta práctica exploraremos la implementación de compuertas lógicas básicas utilizando el software nand2tetris, con el apoyo del entorno de desarrollo Visual Studio Code. El propósito es comprender y diseñar compuertas lógicas fundamentales, como NOT, AND, OR, XOR, entre otras, teniendo únicamente a la puerta lógica NAND como base.
+En esta práctica exploraremos la implementación de chips lógicos básicos utilizando el software nand2tetris, con el apoyo del entorno de desarrollo Visual Studio Code. El propósito es comprender y diseñar estos componentes lógicos fundamentales, como NOT, AND, OR, XOR, entre otros, teniendo únicamente a la puerta lógica NAND como base.
 
 Para comenzar, descargamos el software nand2tetris, que nos proporciona una plataforma interactiva para construir desde cero un computador completo, incluyendo hardware y software, desde los niveles más básicos hasta los más complejos. Así pues, usaremos [este vídeo](https://www.youtube.com/watch?v=xUFpmKa7f7Y&list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI&index=5) como referencia para la instalación.
 
 Con la ayuda de [Visual Studio Code](https://code.visualstudio.com/), un entorno de desarrollo integrado (IDE) altamente versátil, editaremos y escribiremos el código necesario para implementar las compuertas lógicas. Visual Studio ofrece herramientas poderosas para la escritura de código, depuración y gestión de proyectos, lo que facilita enormemente el proceso de desarrollo.
 
-Una vez que tenemos el entorno preparado, comenzamos a diseñar nuestras compuertas lógicas. La elección de la puerta NAND como base se debe a su capacidad para implementar cualquier otra compuerta lógica. Dicho esto, hacemos uso del lenguaje de descripción de hardware (HDL) proporcionado por nand2tetris para escribir el código que define el comportamiento de nuestras compuertas.
+Una vez que tenemos el entorno preparado, comenzamos a diseñar nuestros chips lógicos. La elección de la puerta NAND como base se debe a su capacidad para implementar cualquier otro chip lógico a partir de ella. Dicho esto, hacemos uso del lenguaje de descripción de hardware (HDL) proporcionado por nand2tetris para escribir el código que define el comportamiento de nuestros chips.
 
-Después de tener el código en Visual Studio, lo probamos en el entorno de simulación de nand2tetris. Esta fase es crucial para verificar que nuestras compuertas funcionan correctamente según las especificaciones lógicas esperadas. Si hay errores, volvemos al código en Visual Studio para corregirlos y repetimos el proceso de prueba.
+Después de tener el código en Visual Studio, lo probamos en el entorno de simulación de nand2tetris. Esta fase es crucial para verificar que nuestras implementaciones funcionan correctamente según las especificaciones lógicas esperadas. Si hay errores, volvemos al código en Visual Studio para corregirlos y repetimos el proceso de prueba.
 
 ### Objetivo:
-Construir todas las compuertas lógicas descritas en la Figura 1 para obtener un conjunto de chips básicos. Los únicos bloques de construcción que podemos utilizar en este proyecto son las compuertas Nand primitivas y las compuertas compuestas que iremos construyendo gradualmente sobre ellas.
+Construir todos los componentes lógicos descritos en la Figura 1 para obtener un conjunto de chips básicos. Los únicos bloques de construcción que podemos utilizar en este proyecto son las compuertas Nand primitivas y los chips compuestos que iremos construyendo gradualmente.
 
-**Figura 1.** Listado de Compuertas Lógicas que van a Desarrollarse.
+**Figura 1.** Listado de Chips Lógicos que van a Desarrollarse.
 
 
 ![Compuertas Lógicas a Realizar](https://i.ibb.co/g9c1s3n/Captura-de-pantalla-2024-02-11-091133.png)
@@ -78,9 +78,9 @@ Para implementar una compuerta XOR (o exclusiva) utilizaremos compuertas NOT, AN
 
 
 ### Mux:
-En este chip tenemos una nueva variable de entrada: el selector. Como este afecta directamente a la salida dependiendo del estado que tenga, lo vamos a negar primero con una NOT. Ahora bien, necesitamos que si el selector está en 0, la salida sea a, por lo que usaremos una AND que de parámetros reciba al selector negado y a a. Asimismo, si el selector está en 1, la salida será b, entonces en otra AND de parámetros le pasamos al selector sin negar y a b. Finalmente, los resultados de ambas AND las mandamos como parámetros de una OR y ya obtenemos al multiplexor.
+En este chip tenemos una nueva variable de entrada: el selector. Como este afecta directamente a la salida dependiendo del estado que tenga, lo vamos a negar primero con una NOT. Ahora bien, necesitamos que si el selector está en 0, la salida sea a, por lo que usaremos una AND que de parámetros reciba al selector negado y a a. Asimismo, si el selector está en 1, la salida será b, entonces en otra AND le pasamos de parámetros al selector sin negar y a b. Finalmente, los resultados de ambas AND las mandamos como parámetros a una OR y ya obtenemos al multiplexor.
 
-**Figura 10.** Código Compuerta MUX
+**Figura 10.** Código Chip MUX
 
 
 ![Código Mux](https://i.ibb.co/T0cyLD8/Captura-de-pantalla-2024-02-14-233529.png)
@@ -92,7 +92,7 @@ Primer chip en incluir dos salidas (a y b) y dos entradas (in y sel). Usaremos u
 - La primera recibe a in y al selector sin negar.
 - La segunda recibe al selector negado y a in.
 
-**Figura 11.** Código Compuerta DMux
+**Figura 11.** Código Chip DMux
 
 
 ![Código DMux](https://i.ibb.co/phcDsMS/Captura-de-pantalla-2024-02-15-000003.png)
@@ -100,16 +100,26 @@ Primer chip en incluir dos salidas (a y b) y dos entradas (in y sel). Usaremos u
 ### Not16
 Bastante sencilla de entender e implementar: 16 posibles entradas y todas las que pasen, saldrán negadas. Simplemente vamos a usar 16 compuertas NOT (una para cada entrada) y listo.
 
-**Figura 12.** Código Compuerta DMux
+**Figura 12.** Código Chip Not16
 
 
 ![Código Not16](https://i.ibb.co/FH4QxBw/Captura-de-pantalla-2024-02-15-000739.png)
 
 ### And16
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+En términos conceptuales, será muy similar al Not16, pues aquí también vamos a usar 16 compuertas AND y la estructura será casi la misma: como tenemos dos entradas (a y b) y una sola salida, cada AND va a estar destinada a una pareja de inputs específicos (0-0, 1-1, 2-2, y así sucesivamente). 
+
+**Figura 13.** Código Chip And16
+
+
+![Código Ans16](https://i.ibb.co/cCsCD9j/Captura-de-pantalla-2024-02-15-003657.png)
 
 ### Or16
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
+Súper sencilla: cambiar del código de And16 todos los AND por OR. Esto debido a que sigue las mismas reglas para sus resultados, lo único distinto es la operación que se realiza sobre las entradas.
+
+**Figura 14.** Código Chip Or16
+
+
+![Código Or16](https://i.ibb.co/MZ3N226/Captura-de-pantalla-2024-02-15-004103.png)
 
 ### Mux16
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis vulputate facilisis. Ut auctor eu enim vitae pharetra. Cras ultrices consequat diam, sed ultrices ex condimentum non. Curabitur vehicula nunc id ipsum gravida accumsan. Praesent interdum id ante et congue. Cras ut risus ultrices, luctus elit sit amet, mollis quam. Nulla eleifend lobortis ullamcorper. Ut eleifend cursus maximus. Morbi vitae ante vitae odio lobortis mattis. Praesent vestibulum est et tellus sollicitudin iaculis. Sed imperdiet odio ac dui hendrerit maximus. Donec at bibendum dolor.
