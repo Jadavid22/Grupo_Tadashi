@@ -17,5 +17,8 @@ Para construirlo, podemos hacer uso de una compuerta Mux (que ya la tenemos impl
 **Figura 2.** Código para Construir el Bit.
 
 
-![Código para Construir el Bit](https://i.ibb.co/VNZdhzZ/Captura-de-pantalla-2024-02-25-115818.png)
+![Código para Construir el Bit](https://i.ibb.co/k3GJ0Vm/Captura-de-pantalla-2024-02-25-120012.png)
+
+
+### Register
 
