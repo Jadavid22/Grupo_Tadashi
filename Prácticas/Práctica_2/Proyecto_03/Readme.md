@@ -33,7 +33,7 @@ Tiene exactamente la misma estructura que un Bit, la única diferencia es que se
 
 ### PC (Program Counter)
 
-Necesitaremos un Register, tres Mux16 (para inc, load y reset) y un incrementador para calcular todas las posibles variables
+Necesitaremos un Register, tres Mux16 (para inc, load y reset) y un incrementador para calcular todas las posibles variables.
 
 **Figura 4.** Componentes para Construir el PC.
 
@@ -94,7 +94,7 @@ Nuevamente, otros 8 chips, pero esta vez de RAM512.
 
 ### RAM16K
 
-Finalmente, usamos en esta ocasión 4 chips de RAM4K, cambiamos el DMux8Way por un DMux4Way y el Mux8Way16 por un Mux4Way16. Finalmente modificamos los intervalos.
+Finalmente, usamos en esta ocasión 4 chips de RAM4K, cambiamos el DMux8Way por un DMux4Way y el Mux8Way16 por un Mux4Way16. Finalmente, modificamos los intervalos.
 
 **Figura 11.** Código para Construir la RAM16K.
 
