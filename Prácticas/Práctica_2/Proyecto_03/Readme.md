@@ -47,5 +47,18 @@ Necesitaremos un Register, tres Mux16 (para inc, load y reset) y un incrementado
 
 ![Código para Construir el Bit](https://i.ibb.co/1Q3vbhs/Captura-de-pantalla-2024-02-25-155436.png)
 
+### RAM8
+
+Se trata de una memoria de 8 registros, cada uno de 16 bits de ancho. Out contiene el valor almacenado en la posición de memoria especificada por address. Si load==1, el valor in se carga en la posición de memoria especificada por address (el valor cargado se emitirá a out a partir del siguiente paso temporal). Vamos a utilizar un DMux8Way, 8 Register (uno para cada salida del Dmux8Way) y un Max8Way16 (para las ocho salidas de los Register).
+
+**Figura 6.** Componentes para Construir el PC.
 
 
+![Componentes para Construir el PC](https://nand2tetris-hdl.github.io/img/ram8.png)
+
+**Nota.** Imagen obtenida de: https://nand2tetris-hdl.github.io/#reg
+
+**Figura 7.** Código para Construir la RAM8.
+
+
+![Código para Construir el Bit](https://i.ibb.co/VpfDTwt/Captura-de-pantalla-2024-02-25-161125.png)
