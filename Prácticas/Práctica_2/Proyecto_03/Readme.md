@@ -62,3 +62,12 @@ Se trata de una memoria de 8 registros, cada uno de 16 bits de ancho. Out contie
 
 
 ![Código para Construir el Bit](https://i.ibb.co/VpfDTwt/Captura-de-pantalla-2024-02-25-161125.png)
+
+### RAM64
+
+Podríamos pensar que es lo mismo que la RAM8 pero con 64 Register esta vez. Pues la respuesta es no, vamos a reutilizar la RAM8 que ya tenemos.
+
+**Figura 8.** Código para Construir la RAM8.
+
+
+![Código para Construir el Bit](https://i.ibb.co/ZzQHZ9X/Captura-de-pantalla-2024-02-25-164212.png)
