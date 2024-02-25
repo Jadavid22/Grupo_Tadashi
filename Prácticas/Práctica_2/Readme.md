@@ -18,7 +18,7 @@ Cada uno de ellos desempeña un papel clave en la creación de la ALU, que es re
 
 **Proyecto 03:**
 
-De forma paralela al Proyecto 02, aquí también vamos a construir una serie de chips para llevar a cabo creación de una unidad de RAM, por lo que resulta pertinente comprender e implementar el funcionamiento de los siguientes componentes: 
+De forma paralela al Proyecto 02, aquí también vamos a construir una serie de chips para llevar a cabo la creación de una unidad de RAM, por lo que resulta pertinente comprender e implementar el funcionamiento de los siguientes componentes: 
 - DFF (Flip-Flop D)
 - Bit (Bit)
 - Register (Registro)
