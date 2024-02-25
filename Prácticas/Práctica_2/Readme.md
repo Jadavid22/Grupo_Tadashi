@@ -14,7 +14,7 @@ Para lograr este objetivo, es necesario construir y comprender el funcionamiento
 - ALU (Unidad Aritmético-Lógica)
 
 
-Cada uno de estos chips desempeña un papel clave en la creación de la ALU, que es responsable de realizar operaciones aritméticas y lógicas en la computadora Hack.
+Cada uno de ellos desempeña un papel clave en la creación de la ALU, que es responsable de realizar operaciones aritméticas y lógicas en la computadora Hack.
 
 **Proyecto 03:**
 
@@ -29,7 +29,7 @@ De forma paralela al Proyecto 02, aquí también vamos a construir una serie de 
 - RAM16K
 - PC
 
-Los chips anteriores son la base para poder implementar la unidad de RAM, que es la responsable de almacenar y acceder a datos en la memoria principal de la computadora.
+Los chips anteriores son la base para poder implementar la unidad de RAM, la cual es la responsable de almacenar y acceder a datos en la memoria principal de la computadora.
 
 ### Explique las Principales Diferencias entre la Lógica Aritmética y la Lógica Secuencial
 **Lógica Aritmética:**
