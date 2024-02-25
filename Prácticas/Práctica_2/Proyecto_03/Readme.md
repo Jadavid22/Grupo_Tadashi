@@ -67,7 +67,32 @@ Se trata de una memoria de 8 registros, cada uno de 16 bits de ancho. Out contie
 
 Podríamos pensar que es lo mismo que la RAM8 pero con 64 Register esta vez. Pues la respuesta es no, vamos a reutilizar la RAM8 que ya tenemos.
 
-**Figura 8.** Código para Construir la RAM8.
+**Figura 8.** Código para Construir la RAM64.
 
 
 ![Código para Construir el Bit](https://i.ibb.co/ZzQHZ9X/Captura-de-pantalla-2024-02-25-164212.png)
+
+### RAM512
+
+Ahora en lugar de usar la RAM8, usamos 8 de la RAM64.
+
+**Figura 9.** Código para Construir la RAM512.
+
+
+![Código para Construir el Bit](https://i.ibb.co/K2dty98/Captura-de-pantalla-2024-02-25-175732.png)
+
+
+### RAM4K
+
+Nuevamente, otros 8 chips, pero esta vez de RAM512.
+
+**Figura 10.** Código para Construir la RAM4K.
+
+
+![Código para Construir el Bit](https://i.ibb.co/Xskvs3d/Captura-de-pantalla-2024-02-25-180145.png)
+
+
+### RAM16K
+
+Finalmente, usamos en esta ocasión 4 chips de RAM4K.
+
