@@ -17,7 +17,7 @@ Para construirlo, podemos hacer uso de una compuerta Mux (que ya la tenemos impl
 **Figura 2.** Código para Construir el Bit.
 
 
-![Código para Construir el Bit](https://i.ibb.co/k3GJ0Vm/Captura-de-pantalla-2024-02-25-120012.png)
+![Código para Construir el Bit](https://i.ibb.co/QnG8Yzw/Captura-de-pantalla-2024-02-25-131106.png)
 
 
 ### Register
@@ -29,4 +29,23 @@ Tiene exactamente la misma estructura que un Bit, la única diferencia es que se
 
 
 ![Código para Construir el Bit](https://i.ibb.co/QNxk9dh/Captura-de-pantalla-2024-02-25-130421.png)
+
+
+### PC (Program Counter)
+
+Necesitaremos un Register, tres Mux16 (para inc, load y reset) y un incrementador para calcular todas las posibles variables
+
+**Figura 4.** Componentes para Construir el PC.
+
+
+![Componentes para Construir el PC](https://nand2tetris-hdl.github.io/img/pc.png)
+
+**Nota.** Imagen obtenida de: https://nand2tetris-hdl.github.io/img/pc.png
+
+**Figura 5.** Código para Construir el PC.
+
+
+![Código para Construir el Bit](https://i.ibb.co/1Q3vbhs/Captura-de-pantalla-2024-02-25-155436.png)
+
+
 
