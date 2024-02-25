@@ -22,3 +22,11 @@ Para construirlo, podemos hacer uso de una compuerta Mux (que ya la tenemos impl
 
 ### Register
 
+Tiene exactamente la misma estructura que un Bit, la única diferencia es que se trata de un Array de 16 posiciones, por lo que necesitaremos 16 chips del tipo Bit.
+
+
+**Figura 3.** Código para Construir el Register.
+
+
+![Código para Construir el Bit](https://i.ibb.co/QNxk9dh/Captura-de-pantalla-2024-02-25-130421.png)
+
