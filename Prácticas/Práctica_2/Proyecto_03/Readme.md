@@ -94,5 +94,10 @@ Nuevamente, otros 8 chips, pero esta vez de RAM512.
 
 ### RAM16K
 
-Finalmente, usamos en esta ocasión 4 chips de RAM4K.
+Finalmente, usamos en esta ocasión 4 chips de RAM4K, cambiamos el DMux8Way por un DMux4Way y el Mux8Way16 por un Mux4Way16. Finalmente modificamos los intervalos.
+
+**Figura 11.** Código para Construir la RAM16K.
+
+
+![Código para Construir el Bit](https://i.ibb.co/cy4Szdd/Captura-de-pantalla-2024-02-25-181143.png)
 
