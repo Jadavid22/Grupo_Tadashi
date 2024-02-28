@@ -41,7 +41,7 @@ Para este circuito sumamos dos entradas de 16 bits, por lo que es esencial utili
 **Figura 5.** Código del Add16.
 
 
-![Componentes para Construir el Chip](https://i.ibb.co/zZqyhHS/Capture.png)
+![Componentes para Construir el Chip](https://i.ibb.co/8mNLsJQ/Capture.png)
 
 ### Inc16
 
@@ -69,4 +69,5 @@ Es un circuito digital que realiza operaciones aritméticas como la suma o la re
 
 [2] https://www.diariobitcoin.com/glossary/alu/
 
+[3] https://www.youtube.com/watch?v=Wl53tFc5WYQ&list=PLu6SHDdOToSdD4-c9nZX2Qu3ZXnNFocOH&index=7
 
