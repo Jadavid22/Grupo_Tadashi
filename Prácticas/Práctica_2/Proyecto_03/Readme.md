@@ -103,5 +103,5 @@ Finalmente, usamos en esta ocasión 4 chips de RAM4K, cambiamos el DMux8Way por 
 
 ## Referencias
 
-https://www.youtube.com/watch?v=3xIQDyutc2Y&list=PLu6SHDdOToSdD4-c9nZX2Qu3ZXnNFocOH&index=8
+[1] https://www.youtube.com/watch?v=3xIQDyutc2Y&list=PLu6SHDdOToSdD4-c9nZX2Qu3ZXnNFocOH&index=8
 
