@@ -101,3 +101,7 @@ Finalmente, usamos en esta ocasión 4 chips de RAM4K, cambiamos el DMux8Way por 
 
 ![Código para Construir el Bit](https://i.ibb.co/cy4Szdd/Captura-de-pantalla-2024-02-25-181143.png)
 
+## Referencias
+
+https://www.youtube.com/watch?v=3xIQDyutc2Y&list=PLu6SHDdOToSdD4-c9nZX2Qu3ZXnNFocOH&index=8
+
