@@ -2,7 +2,7 @@
 
 ### Mult
 
-El objetivo principal de este programa es multiplicar dos números enteros no negativos y almacenar el resultado en una ubicación de memoria específica. A continuación, tendremos una breve explicación por pasos de cómo lo desarrolla la maquina en el funcionamiento del programa Mult.asm:
+El objetivo principal de este programa es multiplicar dos números enteros no negativos y almacenar el resultado en una ubicación de memoria específica. A continuación, tendremos una breve explicación por pasos de cómo lo desarrolla la máquina en el funcionamiento del programa Mult.asm:
 
 - **Inicialización:** El programa comienza inicializando un contador llamado "i" en 1, que se utilizará para iterar a través de los bits del multiplicador.
 - **Inicialización del resultado:** Inicializa la ubicación de memoria RAM[2] (R2) a 0, donde se almacenará el resultado final de la multiplicación.
