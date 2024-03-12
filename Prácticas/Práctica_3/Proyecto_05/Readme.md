@@ -72,6 +72,13 @@ Es el componente principal de una computadora y otros dispositivos que procesa i
 ![Componentes para Construir el Bit](https://i.ibb.co/c24b3kL/cpu1-codigo-que-se-va-a-implementar.png)
 
 
+Para verificar el funcionamiento, solo cargamos en el Hardware Simulator el archivo CPU.hdl y lo comparamos con CPU.tst
+
+
+**Figura 5.** Comprobar el Funcionamiento en el Hardware Simulator
+
+![Componentes para Construir el Bit](https://i.ibb.co/sbZSxM1/cpu2-comprobacion-del-funcionamiento-en-el-hardware-simulator.png)
+
 
 ### Computer
 
