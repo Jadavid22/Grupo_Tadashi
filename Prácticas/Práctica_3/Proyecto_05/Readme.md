@@ -82,9 +82,31 @@ Para verificar el funcionamiento, solo cargamos en el Hardware Simulator el arch
 
 ### Computer
 
-**Figura 5.** 
+Se puede construir a partir de tres chips: CPU, Memoria y ROM32K, los dos primeros contruidos anteriormente en este mismo proyecto y el ROM32K es un chip que ya esta incorporado, este es un circuito integrado que almacena datos inalterables de aproximadamente 32KB. El ordenador tiene una jerarquía de hardware con el chip de ordenador en la cima, que contiene la CPU, la memoria de instrucciones y la memoria de datos. El ordenador puede interactuar con una pantalla y un teclado.
 
-![Componentes para Construir el Bit]()
+
+**Figura 6.** Interacción del Computador con otros Elementos
+
+![Componentes para Construir el Bit](https://i.ibb.co/dm2t1yQ/Computer-1-Interacci-n-del-Computador-con-otros-Elementos.png)
+
+La función principal de este chip es ejecutar programas almacenados en la memoria de solo lectura (ROM) y manejar la interacción con la CPU y la memoria. Su funcionamiento se resume de la siguiente manera:
+
+- La entrada del chip es un solo bit llamado reset, que se utiliza para reiniciar la ejecución del programa almacenado en la ROM.
+- Cuando reset es 0, el programa almacenado en la ROM comienza a ejecutarse.
+- Cuando reset es 1, la ejecución del programa se reinicia.
+- El chip consta de tres partes principales:
+  
+  - **ROM32K:** un chip que representa la memoria de solo lectura (ROM) con 32K direcciones. Al recibir la dirección pc (contador de programa), la ROM devuelve la instrucción almacenada en esa dirección.
+  - **CPU:** la unidad central de procesamiento (CPU) que ejecuta las instrucciones del programa. Recibe la instrucción de la ROM, la entrada desde la memoria (memOut), y controla el flujo de ejecución del programa según la señal reset.
+  - **Memory:** una unidad de memoria que almacena datos y devuelve el valor almacenado en una dirección específica.
+
+Este chip es el componente principal de la arquitectura Hack, que permite cargar programas desde la ROM, ejecutar instrucciones y controlar la ejecución del programa mediante la señal reset.
+
+
+**Figura 7.** Código de Computer que se va a Implementar
+
+![Componentes para Construir el Bit](https://i.ibb.co/sCrsMst/Computer-2-codigo-del-computer-que-se-va-a-implementar.png)
+
 
 ## Referencias
 
