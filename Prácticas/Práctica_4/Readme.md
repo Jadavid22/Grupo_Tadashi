@@ -32,6 +32,42 @@ El código realiza un ensamblado de un programa en lenguaje ensamblador de Hack 
 - **Segunda pasada:** En la segunda pasada por el archivo de entrada, se traducen las instrucciones a código máquina. Las instrucciones de dirección A (@) se traducen directamente a código binario, ya sea como una dirección de memoria o como un valor constante. Las instrucciones de computación (comp) se traducen usando los diccionarios de mapeo (comp_dict, dest_dict, jump_dict) para obtener los códigos binarios correspondientes a cada parte de la instrucción.
 - **Escritura en archivo de salida:** En lugar de imprimir el código máquina por la terminal, se escribe en un archivo de salida con extensión .hack. Cada instrucción se escribe en una línea separada en el archivo de salida, lo que permite almacenar el código máquina generado para su uso posterior en la plataforma Hack.
 
+
+**Figura 1.** Comparación Exitosa Add HACK.
+
+![Componentes para Construir el Bit](https://i.ibb.co/p24tKzY/Proyecto-6-Comparaci-n-Exitosa-Add-HACK.png)
+
+
+**Figura 2.** Comparación Exitosa Max HACK.
+
+![Componentes para Construir el Bit](https://i.ibb.co/NrRDMqt/Proyecto-6-Comparaci-n-Exitosa-Max-HACK.png)
+
+
+**Figura 3.** Comparación Exitosa MaxL HACK.
+
+![Componentes para Construir el Bit](https://i.ibb.co/9wd6fP7/Proyecto-6-Comparaci-n-Exitosa-Max-L-HACK.png)
+
+
+**Figura 4.** Comparación Exitosa Pong HACK.
+
+![Componentes para Construir el Bit](https://i.ibb.co/JmsJ9XN/Proyecto-6-Comparaci-n-Exitosa-Pong-HACK.png)
+
+
+**Figura 5.** Comparación Exitosa PongL HACK.
+
+![Componentes para Construir el Bit](https://i.ibb.co/whzZpym/Proyecto-6-Comparaci-n-Exitosa-Pong-L-HACK.png)
+
+
+**Figura 6.** Comparación Exitosa Rect HACK.
+
+![Componentes para Construir el Bit](https://i.ibb.co/X5rHs2Q/Proyecto-6-Comparaci-n-Exitosa-Rect-HACK.png)
+
+
+**Figura 7.** Comparación Exitosa RectL HACK.
+
+![Componentes para Construir el Bit](https://i.ibb.co/3SbQbft/Proyecto-6-Comparaci-n-Exitosa-Rect-L-HACK.png)
+
+
 ## Referencias ##
 
 [1] https://historiadelaempresa.com/que-es-el-lenguaje-ensamblador
