@@ -14,7 +14,7 @@ El traductor maneja varias operaciones básicas como push, pop, operaciones arit
 - **Manejo de operaciones de comparación (eq, gt, lt):** Se utilizan etiquetas únicas (True1, False1, True2, etc.) para controlar el flujo de ejecución después de las comparaciones.
 - **Manejo de operaciones lógicas (and, or, not):** Las operaciones and y or realizan las operaciones lógicas correspondientes en los dos últimos valores de la pila. La operación not realiza la operación lógica not en el último valor de la pila.
 - **Escritura en el archivo de salida:** Después de procesar cada línea, se escriben las instrucciones ASM correspondientes en el archivo de salida.
-**Llamadas a traductorVM() para cada archivo VM:** Se realizan llamadas a la función traductorVM() para cada archivo VM que se quiere traducir a ASM.
+- **Llamadas a traductorVM() para cada archivo VM:** Se realizan llamadas a la función traductorVM() para cada archivo VM que se quiere traducir a ASM.
 
   ## Referencias
 
