@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-'''
-VM Translator
-'''
-
 import os
 
 COMMENT = '//'
