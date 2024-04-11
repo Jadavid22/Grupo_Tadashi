@@ -8,3 +8,7 @@ Es una continuación del proyecto anterior que está hecha para darle más funci
 - return
 
 Estas llevan la labor de traducir etiquetas, saltos condicionales e incondicionales a diferentes líneas, declaración de funciones, llamado de funciones y retorno de funciones.
+
+## Referencias
+
+[1] https://github.com/kronosapiens/nand2tetris/tree/master/projects/08
