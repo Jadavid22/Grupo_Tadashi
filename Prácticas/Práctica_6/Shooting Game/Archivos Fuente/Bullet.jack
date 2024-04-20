@@ -1,0 +1,80 @@
+class Bullet {
+    field int velocity;
+    field int position;
+    
+    constructor Bullet new(int speed) {
+        let position = 0;
+        let velocity = speed;
+        return this;
+    }
+
+    method void render_projectile() {
+        do Screen.drawCircle((position+104),120,7);
+        return;
+    }
+
+    method void navigate() {
+        /* El proyectil se mueve a lo largo de una linea */
+        do Screen.setColor(true);
+        do render_projectile();
+        if (position < (400 - 32 - velocity)) {
+            do Screen.setColor(false);
+            do render_projectile();
+            let position = position + velocity;
+            do Screen.setColor(true);
+            do render_projectile();
+        }
+        return;
+    }
+    
+    method void vanish() {
+        /* Borrar el proyectil y desecharlo */
+        do Screen.setColor(false);
+        do render_projectile();
+        do remove();
+        return;
+    }
+
+    method void explode(int location) {
+        /* Cuando el proyectil alcance a su objetivo hay que hacerlo explotar */
+        var int memoryLocation;
+        let memoryLocation = 16384+location;
+        do Memory.poke(memoryLocation+0, 8192);
+        do Memory.poke(memoryLocation+32, 30734);
+        do Memory.poke(memoryLocation+64, 15388);
+        do Memory.poke(memoryLocation+96, 2108);
+        do Memory.poke(memoryLocation+128, 56);
+        do Memory.poke(memoryLocation+160, 16384);
+        do Memory.poke(memoryLocation+192, 10294);
+        do Memory.poke(memoryLocation+224, 31806);
+        do Memory.poke(memoryLocation+256, 10294);
+        do Memory.poke(memoryLocation+288, 16384);
+        do Memory.poke(memoryLocation+320, 8);
+        do Memory.poke(memoryLocation+352, 10268);
+        do Memory.poke(memoryLocation+384, 31948);
+        do Memory.poke(memoryLocation+416, 14542);
+        do Memory.poke(memoryLocation+448, 24710);
+        do Memory.poke(memoryLocation+480, 0);
+        do Sys.wait(1000);
+        do Screen.setColor(false);
+        do Screen.drawRectangle(465,118, 483,135);
+        return;
+    }
+
+
+    method boolean impact() {
+        /* Determinar si el proyectil ha alcanzado al objetivo */
+        if (position > (400 - 32 - velocity)) {
+            return true;
+        }
+        if (position = (400 - 32 - velocity)) {
+            return true;
+        }
+        return false;
+    }
+
+    method void remove() {
+        do Memory.deAlloc(this);
+        return;
+    }
+}

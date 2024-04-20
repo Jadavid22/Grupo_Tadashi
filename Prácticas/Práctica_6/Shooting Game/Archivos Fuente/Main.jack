@@ -1,0 +1,56 @@
+class Main {
+    function void main() {
+        var Gun weapon;
+        var Target objective;
+        var boolean marker;
+        var int velocity;
+        var boolean active_game;
+        var int retry;
+        let active_game = true;
+        while (active_game) {
+            let marker = true;
+            while (marker) {
+                do Output.moveCursor(1, 17);
+                do Output.printString("Bienvenido al JUEGO DE DISPAROS");
+                do Output.moveCursor(3, 10);
+                do Output.printString("Elige un nivel: 1: Facil, 2: Medio, 3: Dificil");
+                do Output.moveCursor(7, 30);
+                let velocity = Keyboard.readInt("");
+                if ((velocity = 1) | (velocity = 2) | (velocity = 3)) {
+                    let marker = false;
+                } //Cuanto mayor sea la velocidad, mas facil sera el juego
+                /* Si el jugador no proporciona un numero valido, el programa preguntara de nuevo */
+            }
+            do Output.moveCursor(7,20);
+            do Output.printString("Presiona la barra espaciadora para disparar");
+            do Sys.wait(1500);
+            do Screen.clearScreen();
+            let velocity = 6 / velocity;
+            let objective = Target.new(velocity);
+            do objective.display_score();
+            let weapon = Gun.new(0,0,(velocity));
+            do objective.render_objective(true);
+            do objective.navigate(weapon);
+            do Screen.clearScreen();
+            do objective.display_final();
+            do Sys.wait(1000);
+           
+            do Output.moveCursor(10, 20);
+            do Output.printString("¿DE NUEVO? 1: SI, 2: NO");
+            do Output.moveCursor(13, 30);
+            let retry =  Keyboard.readInt("");
+            if (~(retry=1)) {
+                /* Si el jugador decide jugar de nuevo */
+                do Output.moveCursor(10, 30);
+                do Screen.clearScreen();
+                do Output.printString("ADIOS");
+                do Sys.wait(2000);
+                do Screen.clearScreen();
+                do Sys.wait(2000);
+                return;
+            }
+            do Screen.clearScreen();
+        }
+        return;
+    }
+}

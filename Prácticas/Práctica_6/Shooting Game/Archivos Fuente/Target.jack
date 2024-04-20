@@ -1,0 +1,172 @@
+class Target {
+    field int position;
+    field int result;
+    field int score;
+    field int opportunity;
+    field int velocity;
+
+    constructor Target new(int speed) {
+        let velocity = speed;
+        let result = 0;
+        let opportunity = 3;
+        let position = 0;
+        return this;
+    }
+
+    method void render_objective(boolean color) {
+        do Screen.setColor(color);
+        do Screen.drawRectangle(504, position, 511, position + 95);
+        do Screen.drawRectangle(496, (position + 16), 503, (position + 16 + 63));
+        do Screen.drawRectangle(488, (position + 32), 495, (position + 32 + 31));
+        do Screen.drawRectangle(484, (position + 40), 487, (position + 40 +15));
+        do Screen.setColor(false);
+        do Screen.drawRectangle(491, (position + 35), 493, (position + 60));
+        return;
+    }
+ 
+    method void navigate(Gun weapon) {
+        var boolean set;
+        var boolean marker;
+        var boolean descending;
+        var boolean launched;
+        var int input;
+        let marker = true;
+        let descending = true;
+        let launched = false;
+        while (marker) {
+            let input = Keyboard.keyPressed();
+            if (input = 32 & ~(launched)) {
+                let launched = true;
+                do weapon.fire_start(4101);
+            }
+            if (launched) {
+                do weapon.fire();
+            }
+            if (weapon.hit() & opportunity > 0) {
+                let score = compute_score();
+                let opportunity = opportunity - 1;
+                let result = result + score;
+                do weapon.disappear();
+                do weapon.blast(3805);
+                do display_score();
+                do Sys.wait(1000);
+                let weapon = Gun.new(0,0,velocity);
+                let launched = false;
+            }
+            if (opportunity = 0) {
+                return;
+            }
+            if (position < 159 & (descending)) {
+                do descend();
+                let position = position + 1;
+            }
+            if (position = 159) {
+                let descending = false;
+            }
+            if (position > 0 & ~(descending)) {
+                do ascend();
+                let position = position - 1;
+            }
+            if (position = 0) {
+                let descending = true;
+            }
+        }
+        return;
+    }
+
+    method int absolute(int a, int b) {
+        if (a > b) {
+            return (a-b);
+        }
+        return (b-a);
+    }
+
+    method int compute_score() {
+        var int middle;
+        var int difference;
+        let middle = position + 48;
+        let difference = absolute(120, middle);
+        if (difference < 10) {
+            return 100;
+        }
+        if (difference < 20) {
+            return 80;
+        }
+        if (difference < 30) {
+            return 60;
+        }
+        if (difference < 40) {
+            return 40;
+        }
+        if (difference < 50) {
+            return 20;
+        }
+        return 0;
+    }
+
+    method void descend() {
+        do Screen.setColor(true);
+        do Screen.drawLine(504, 95 + position + 1, 511, 95 + position + 1);
+        do Screen.drawLine(496, position + 16 + 63 + 1, 503, position + 16 + 63 + 1);
+        do Screen.drawLine(488, position + 32 + 31 + 1, 495, position + 32 + 31 + 1);
+        do Screen.drawLine(484, position + 40 + 15 + 1, 487, position + 40 + 15 + 1);
+        do Screen.drawLine(491, (position + 35), 493, (position + 35)); 
+        do Screen.setColor(false);
+        do Screen.drawLine(504, position, 511, position);
+        do Screen.drawLine(496, position+16, 503, position+16);
+        do Screen.drawLine(488, position+32, 495, position+32);
+        do Screen.drawLine(484, position+40, 487, position+40);
+        do Screen.drawLine(491, (position + 60 + 1), 493, (position + 60 + 1));
+        do Sys.wait(10);
+        return;
+    }
+
+    method void ascend() {
+        do Screen.setColor(true);
+        do Screen.drawLine(504, position-1, 511, position-1);
+        do Screen.drawLine(496, position+16-1, 503, position+16-1);
+        do Screen.drawLine(488, position+32-1, 495, position+32-1);
+        do Screen.drawLine(484, position+40-1, 487, position+40-1);
+        do Screen.drawLine(491, position+60-1, 493, position+60-1);
+        do Screen.setColor(false);
+        do Screen.drawLine(504, 95 + position, 511, 95 + position);
+        do Screen.drawLine(496, position + 16 + 63, 503, position + 16 + 63);
+        do Screen.drawLine(488, position + 32 + 31, 495, position + 32 + 31);
+        do Screen.drawLine(484, position + 40 + 15, 487, position + 40 + 15);
+        do Screen.drawLine(491, (position + 35 - 1), 493, (position + 35 - 1));
+        do Sys.wait(10);
+        return;
+    }
+
+    method void display_score() {
+        do Output.moveCursor(3,20);
+        do Output.printString("TU PUNTUACION ACTUAL ES:");
+        do Output.moveCursor(3,45);
+        do Output.printString("   "); //prevent 100
+        do Output.moveCursor(3,45);
+        do Output.printInt(score);
+        do Output.moveCursor(5,20);
+        do Output.printString("TUS BALAS RESTANTES:");
+        do Output.moveCursor(5,40);
+        do Output.printInt(opportunity);
+        do Output.moveCursor(7, 20);
+        do Output.printString("TU PUNTUACION TOTAL ES:");
+        do Output.moveCursor(7, 40);
+        do Output.printInt(result);
+        return;
+    }
+
+    method void display_final() {
+       do Output.moveCursor(7, 20);
+        do Output.printString("TU PUNTUACION TOTAL ES:");
+        do Output.moveCursor(7, 40);
+        do Output.printInt(result); 
+        return;
+    }
+
+    method void remove() {
+        do weapon.disappear();
+        do Memory.deAlloc(this);
+        return;
+    }
+}
