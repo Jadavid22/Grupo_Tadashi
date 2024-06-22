@@ -8,7 +8,7 @@ En este último apartado, correspondiente al proyecto final de la asignatura, co
   
 - Póster Digital:
 
-  https://1drv.ms/b/c/4f88fa38ec87d810/EdORsAnAuSFCh_P_HUe2cZwBUg05gNkZFDmcq4ke4yvPxw?e=od4g3O
+  https://1drv.ms/b/c/4f88fa38ec87d810/EV6g7C-yEXpGs6vLHJGBqYIB3H-UEMhH2WwhYeAaMEv7Fg?e=vMRIwu
   
 - Vídeo de la Presentación:
 
