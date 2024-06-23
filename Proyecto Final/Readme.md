@@ -1,5 +1,7 @@
-## Proyecto Final
+# Proyecto Final
 En este último apartado, correspondiente al proyecto final de la asignatura, compartimos el artículo técnico, el vídeo de la presentación y el póster digital.
+
+![](https://images.pexels.com/photos/372787/pexels-photo-372787.jpeg)
 
 ## Enlaces
 - Artículo Técnico:
