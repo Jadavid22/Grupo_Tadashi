@@ -6,11 +6,11 @@ En este último apartado, correspondiente al proyecto final de la asignatura, co
 ## Enlaces
 - Artículo Técnico:
 
-  https://1drv.ms/b/c/4f88fa38ec87d810/EYCFXUrllD9OmzqqxZk2qX0B91_ROVhvqwas-_DM5ec9eQ?e=ms2kHk
+  https://1drv.ms/b/c/4f88fa38ec87d810/EZPGmYUKCBZLnfxwUJ1_TsABZxZLlylWj3TCbJTsmng_uQ?e=PvTBeS
   
 - Póster Digital:
 
-  https://1drv.ms/b/c/4f88fa38ec87d810/EV6g7C-yEXpGs6vLHJGBqYIB3H-UEMhH2WwhYeAaMEv7Fg?e=vMRIwu
+  https://1drv.ms/b/c/4f88fa38ec87d810/EQRGPi1GV-NDrRgUMgdVMoUBw9jGPG7itgOjB0JMAZnQrA?e=6jtRXo
   
 - Vídeo de la Presentación:
 
